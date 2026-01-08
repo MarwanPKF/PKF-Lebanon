@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us | PKF Chartouni</title>
+    <meta name="description" content="Get in touch with PKF Chartouni for assurance, tax, and advisory services." />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Arial', 'sans-serif'],
+                    },
+                    colors: {
+                        pkf: {
+                            blue: '#0B3C6D',
+                            'blue-dark': '#082744',
+                            'blue-light': '#1a5591',
+                            red: '#C8102E',
+                            gray: '#F4F6F8',
+                            text: '#1A1A1A',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-gray-900 antialiased font-sans flex flex-col min-h-screen">
+
+    <!-- Reuse Header (In a real SSG this would be a component) -->
+    <header class="sticky top-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur">
+        <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+            <a href="/" class="flex items-center gap-3">
+                <img src="/assets/images/logo.svg" alt="PKF Chartouni" class="h-10 w-auto" />
+            </a>
+            <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
+                <a class="text-pkf-text hover:text-pkf-blue transition-colors" href="/">Home</a>
+                <a class="text-pkf-text hover:text-pkf-blue transition-colors" href="/about/">About</a>
+                <a class="text-pkf-text hover:text-pkf-blue transition-colors" href="/services/">Services</a>
+                <a class="text-pkf-text hover:text-pkf-blue transition-colors" href="/publications/">Publications</a>
+                <a class="text-pkf-text hover:text-pkf-blue transition-colors" href="/join-our-team/">Join Our Team</a>
+                <a class="rounded-xl bg-pkf-blue px-5 py-2.5 text-white hover:bg-pkf-blue/90 transition-colors focus:outline-none focus:ring-2 focus:ring-pkf-blue focus:ring-offset-2 animate-pulse-ring" href="/contact/">Get in touch</a>
+            </nav>
+            <button class="md:hidden rounded-xl border border-gray-200 px-3 py-2 text-sm font-medium"
+                id="menuBtn">Menu</button>
+        </div>
+        <div class="hidden border-t border-gray-200 bg-white" id="mobileMenu">
+            <div class="mx-auto max-w-6xl px-4 py-4 flex flex-col gap-2 text-sm font-medium">
+                <a class="block py-2 px-2" href="/">Home</a>
+                <a class="block py-2 px-2" href="/about/">About</a>
+                <a class="block py-2 px-2" href="/services/">Services</a>
+                <a class="block py-2 px-2" href="/publications/">Publications</a>
+                <a class="block py-2 px-2" href="/join-our-team/">Join Our Team</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero -->
+        <section class="bg-pkf-gray border-b border-gray-200">
+            <div class="mx-auto max-w-6xl px-4 py-16 md:py-20">
+                <h1 class="text-4xl font-bold tracking-tight text-pkf-blue">Get in touch</h1>
+                <p class="mt-4 text-lg text-gray-600 max-w-2xl">
+                    We’re here to help. Fill out the form below and one of our partners or advisors will get back to you
+                    shortly.
+                </p>
+            </div>
+        </section>
+
+        <!-- Content -->
+        <section class="py-16">
+            <div class="mx-auto max-w-6xl px-4">
+                <div class="grid gap-12 md:grid-cols-12">
+
+                    <!-- Contact Info -->
+                    <div class="md:col-span-5 lg:col-span-4">
+                        <h2 class="text-xl font-semibold text-gray-900 mb-6">Contact Information</h2>
+
+                        <div class="space-y-6">
+                            <div>
+                                <h3 class="text-sm font-medium text-gray-500 uppercase tracking-wide">Address</h3>
+                                <p class="mt-2 text-gray-900 leading-relaxed">
+                                    Sin El Fil, Fouad Chehab Blvd<br>
+                                    Atlas center, 3rd Floor<br>
+                                    Lebanon
+                                </p>
+                            </div>
+
+                            <div>
+                                <h3 class="text-sm font-medium text-gray-500 uppercase tracking-wide">Phone</h3>
+                                <p class="mt-2 text-gray-900">+961 01 493 220</p>
+                            </div>
+
+                            <div>
+                                <h3 class="text-sm font-medium text-gray-500 uppercase tracking-wide">Email</h3>
+                                <p class="mt-2 text-gray-900"><a href="mailto:info@pkflb.com"
+                                        class="hover:underline">info@pkflb.com</a></p>
+                            </div>
+
+                            <div class="pt-6 border-t border-gray-100">
+                                <p class="text-sm text-gray-500 leading-relaxed">
+                                    Looking to join our team? Please visit our <a href="/join-our-team/"
+                                        class="text-gray-900 underline hover:text-amber-700">Join Our Team page</a> to
+                                    submit
+                                    your CV.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form -->
+                    <div class="md:col-span-7 lg:col-span-8">
+                        <div class="bg-white rounded-2xl border border-gray-200 p-6 md:p-8 shadow-sm">
+                            <form name="contact" method="POST" action="/contact/thank-you.html" data-netlify="true"
+                                data-netlify-honeypot="bot-field" class="space-y-6">
+
+                                <input type="hidden" name="form-name" value="contact" />
+                                <p class="hidden">
+                                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                                </p>
+
+                                <div class="grid gap-6 md:grid-cols-2">
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2"
+                                            for="firstName">First Name <span class="text-red-500">*</span></label>
+                                        <input
+                                            class="w-full rounded-lg border-gray-300 shadow-sm focus:border-gray-900 focus:ring-gray-900 px-4 py-2.5 border"
+                                            id="firstName" name="firstName" required maxlength="30" type="text"
+                                            placeholder="Jane" />
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2" for="lastName">Last
+                                            Name <span class="text-red-500">*</span></label>
+                                        <input
+                                            class="w-full rounded-lg border-gray-300 shadow-sm focus:border-gray-900 focus:ring-gray-900 px-4 py-2.5 border"
+                                            id="lastName" name="lastName" required type="text" placeholder="Doe" />
+                                    </div>
+                                </div>
+
+                                <div class="grid gap-6 md:grid-cols-2">
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2"
+                                            for="telephone">Telephone <span class="text-red-500">*</span></label>
+                                        <input
+                                            class="w-full rounded-lg border-gray-300 shadow-sm focus:border-gray-900 focus:ring-gray-900 px-4 py-2.5 border"
+                                            id="telephone" name="telephone" required type="tel" placeholder="+961..." />
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2" for="email">Email
+                                            <span class="text-red-500">*</span></label>
+                                        <input
+                                            class="w-full rounded-lg border-gray-300 shadow-sm focus:border-gray-900 focus:ring-gray-900 px-4 py-2.5 border"
+                                            id="email" name="email" type="email" required
+                                            placeholder="jane@example.com" />
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2" for="message">Enquiry
+                                        <span class="text-red-500">*</span></label>
+                                    <textarea
+                                        class="w-full rounded-lg border-gray-300 shadow-sm focus:border-gray-900 focus:ring-gray-900 px-4 py-2.5 border"
+                                        id="message" name="message" rows="5" required maxlength="1500"
+                                        placeholder="How can we help you?"></textarea>
+                                    <p class="mt-1 text-xs text-gray-500 text-right">Max 1500 characters</p>
+                                </div>
+
+                                <button type="submit"
+                                    class="inline-flex items-center justify-center rounded-xl px-8 py-3 text-white font-medium hover:opacity-90 transition-all focus:outline-none focus:ring-2 focus:ring-pkf-blue focus:ring-offset-2 animate-pulse-ring" style="background-color: #0f3780; background-image: url('/assets/images/starburst.webp'); background-position: calc(50% - 320px) 50%; background-repeat: no-repeat;">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-gray-200 bg-pkf-gray py-12 mt-auto">
+        <div class="mx-auto max-w-6xl px-4 text-center">
+            <p class="text-sm text-gray-500">© <span id="year">2026</span> PKF Chartouni. <a href="/about/legal.html"
+                    class="underline hover:text-gray-900">Legal Disclaimer</a>.</p>
+        </div>
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+            document.getElementById('menuBtn').addEventListener('click', () => {
+                document.getElementById('mobileMenu').classList.toggle('hidden');
+            });
+        </script>
+    </footer>
+</body>
+
+</html>

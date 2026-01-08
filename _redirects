@@ -1,0 +1,19 @@
+/homepage.php            /                         301
+/about.php               /about/                    301
+/our-philosophies.php    /about/philosophies.html  301
+/our-team.php            /about/team.html          301
+/legal.php               /about/legal.html          301
+
+/services.php            /services/                 301
+/assurance.php           /services/assurance.html   301
+/business-risk-solutions.php /services/business-risk-solutions.html 301
+/corporate-finance-advisor.php /services/corporate-finance-advisory.html 301
+/forensic-accounting.php /services/forensic-accounting.html 301
+/insolvency-consulting.php /services/insolvency.html 301
+/it-advisory-and-services.php /services/technology-advisory.html 301
+/taxation-consulting.php /services/taxation.html    301
+/management-consultancy.php /services/management-consultancy.html 301
+
+/publications.php        /publications/             301
+/careers.php             /join-our-team/            301
+/contact-us.php          /contact/                  301
