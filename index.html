@@ -420,7 +420,7 @@
       <div class="relative group-slider">
         <!-- Arrow Left -->
         <button id="sliderBtnLeft" aria-label="Previous services"
-          class="absolute left-0 top-1/2 -translate-y-1/2 -ml-4 z-10 hidden md:flex items-center justify-center w-10 h-10 rounded-full bg-white shadow-lg text-pkf-blue border border-gray-100 opacity-60 hover:opacity-100 transition-opacity disabled:opacity-30 disabled:cursor-not-allowed transform hover:scale-110">
+          class="absolute left-0 top-1/2 -translate-y-1/2 -ml-4 z-10 flex items-center justify-center w-10 h-10 rounded-full bg-white shadow-lg text-pkf-blue border border-gray-100 opacity-60 hover:opacity-100 transition-opacity disabled:opacity-30 disabled:cursor-not-allowed transform hover:scale-110">
           <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
           </svg>
@@ -428,7 +428,7 @@
 
         <!-- Arrow Right -->
         <button id="sliderBtnRight" aria-label="Next services"
-          class="absolute right-0 top-1/2 -translate-y-1/2 -mr-4 z-10 hidden md:flex items-center justify-center w-10 h-10 rounded-full bg-white shadow-lg text-pkf-blue border border-gray-100 opacity-60 hover:opacity-100 transition-opacity transform hover:scale-110">
+          class="absolute right-0 top-1/2 -translate-y-1/2 -mr-4 z-10 flex items-center justify-center w-10 h-10 rounded-full bg-white shadow-lg text-pkf-blue border border-gray-100 opacity-60 hover:opacity-100 transition-opacity transform hover:scale-110">
           <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
           </svg>
@@ -438,51 +438,56 @@
           class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-8 -mx-4 px-4 scrollbar-hide scroll-smooth md:gap-4 md:pb-0">
           <!-- Service 1 -->
           <a href="/services/assurance.html"
-            class="snap-start shrink-0 min-w-[280px] group flex flex-col items-center text-center p-4 rounded-xl hover:bg-white transition-all md:w-[16%] md:min-w-[16%]">
-            <img src="/assets/images/assurance-icon.svg" alt="Assurance" class="h-28 w-28 mb-4">
+            class="snap-start shrink-0 min-w-[180px] group flex flex-col items-center text-center p-4 rounded-xl hover:bg-white transition-all md:w-[16%] md:min-w-[16%]">
+            <img src="/assets/images/assurance-icon.svg" alt="Assurance" class="h-20 w-20 md:h-28 md:w-28 mb-4">
             <h3 class="text-sm font-bold text-pkf-blue">Assurance and Advisory</h3>
           </a>
           <!-- Service 2 -->
           <a href="/services/taxation.html"
-            class="snap-start shrink-0 min-w-[280px] group flex flex-col items-center text-center p-4 rounded-xl hover:bg-white transition-all md:w-[16%] md:min-w-[16%]">
-            <img src="/assets/images/taxation-icon.svg" alt="Taxation" class="h-28 w-28 mb-4">
+            class="snap-start shrink-0 min-w-[180px] group flex flex-col items-center text-center p-4 rounded-xl hover:bg-white transition-all md:w-[16%] md:min-w-[16%]">
+            <img src="/assets/images/taxation-icon.svg" alt="Taxation" class="h-20 w-20 md:h-28 md:w-28 mb-4">
             <h3 class="text-sm font-bold text-pkf-blue">Taxation</h3>
           </a>
           <!-- Service 3 -->
           <a href="/services/corporate-finance-advisory.html"
-            class="snap-start shrink-0 min-w-[280px] group flex flex-col items-center text-center p-4 rounded-xl hover:bg-white transition-all md:w-[16%] md:min-w-[16%]">
-            <img src="/assets/images/corporate-finance-icon.svg" alt="Corporate Finance" class="h-28 w-28 mb-4">
+            class="snap-start shrink-0 min-w-[180px] group flex flex-col items-center text-center p-4 rounded-xl hover:bg-white transition-all md:w-[16%] md:min-w-[16%]">
+            <img src="/assets/images/corporate-finance-icon.svg" alt="Corporate Finance"
+              class="h-20 w-20 md:h-28 md:w-28 mb-4">
             <h3 class="text-sm font-bold text-pkf-blue">Corporate Finance</h3>
           </a>
           <!-- Service 4 -->
           <a href="/services/business-risk-solutions.html"
-            class="snap-start shrink-0 min-w-[280px] group flex flex-col items-center text-center p-4 rounded-xl hover:bg-white transition-all md:w-[16%] md:min-w-[16%]">
-            <img src="/assets/images/business-risk-icon.svg" alt="Business Risk Solutions" class="h-28 w-28 mb-4">
+            class="snap-start shrink-0 min-w-[180px] group flex flex-col items-center text-center p-4 rounded-xl hover:bg-white transition-all md:w-[16%] md:min-w-[16%]">
+            <img src="/assets/images/business-risk-icon.svg" alt="Business Risk Solutions"
+              class="h-20 w-20 md:h-28 md:w-28 mb-4">
             <h3 class="text-sm font-bold text-pkf-blue">Business Risk Solutions</h3>
           </a>
           <!-- Service 5 -->
           <a href="/services/forensic-accounting.html"
-            class="snap-start shrink-0 min-w-[280px] group flex flex-col items-center text-center p-4 rounded-xl hover:bg-white transition-all md:w-[16%] md:min-w-[16%]">
-            <img src="/assets/images/forensic-accounting-icon.svg" alt="Forensic Accounting" class="h-28 w-28 mb-4">
+            class="snap-start shrink-0 min-w-[180px] group flex flex-col items-center text-center p-4 rounded-xl hover:bg-white transition-all md:w-[16%] md:min-w-[16%]">
+            <img src="/assets/images/forensic-accounting-icon.svg" alt="Forensic Accounting"
+              class="h-20 w-20 md:h-28 md:w-28 mb-4">
             <h3 class="text-sm font-bold text-pkf-blue">Forensic Accounting</h3>
           </a>
           <!-- Service 6 -->
           <a href="/services/insolvency.html"
-            class="snap-start shrink-0 min-w-[280px] group flex flex-col items-center text-center p-4 rounded-xl hover:bg-white transition-all md:w-[16%] md:min-w-[16%]">
-            <img src="/assets/images/insolvency-icon.svg" alt="Insolvency Services" class="h-28 w-28 mb-4">
+            class="snap-start shrink-0 min-w-[180px] group flex flex-col items-center text-center p-4 rounded-xl hover:bg-white transition-all md:w-[16%] md:min-w-[16%]">
+            <img src="/assets/images/insolvency-icon.svg" alt="Insolvency Services"
+              class="h-20 w-20 md:h-28 md:w-28 mb-4">
             <h3 class="text-sm font-bold text-pkf-blue">Insolvency Services</h3>
           </a>
           <!-- Service 7 -->
           <a href="/services/management-consultancy.html"
-            class="snap-start shrink-0 min-w-[280px] group flex flex-col items-center text-center p-4 rounded-xl hover:bg-white transition-all md:w-[16%] md:min-w-[16%]">
+            class="snap-start shrink-0 min-w-[180px] group flex flex-col items-center text-center p-4 rounded-xl hover:bg-white transition-all md:w-[16%] md:min-w-[16%]">
             <img src="/assets/images/management-consultancy-icon.svg" alt="Management Consultancy"
-              class="h-28 w-28 mb-4">
+              class="h-20 w-20 md:h-28 md:w-28 mb-4">
             <h3 class="text-sm font-bold text-pkf-blue">Management Consultancy</h3>
           </a>
           <!-- Service 8 -->
           <a href="/services/technology-advisory.html"
-            class="snap-start shrink-0 min-w-[280px] group flex flex-col items-center text-center p-4 rounded-xl hover:bg-white transition-all md:w-[16%] md:min-w-[16%]">
-            <img src="/assets/images/technology-advisory-icon.svg" alt="Technology Advisory" class="h-28 w-28 mb-4">
+            class="snap-start shrink-0 min-w-[180px] group flex flex-col items-center text-center p-4 rounded-xl hover:bg-white transition-all md:w-[16%] md:min-w-[16%]">
+            <img src="/assets/images/technology-advisory-icon.svg" alt="Technology Advisory"
+              class="h-20 w-20 md:h-28 md:w-28 mb-4">
             <h3 class="text-sm font-bold text-pkf-blue">Technology Advisory</h3>
           </a>
         </div>
@@ -645,16 +650,18 @@
     const btnRight = document.getElementById('sliderBtnRight');
 
     if (slider && btnLeft && btnRight) {
-      // Show arrows on desktop hover (using CSS class modification or JS)
-      const container = slider.parentElement;
-      container.addEventListener('mouseenter', () => {
-        btnLeft.classList.remove('opacity-0');
-        btnRight.classList.remove('opacity-0');
-      });
-      container.addEventListener('mouseleave', () => {
-        btnLeft.classList.add('opacity-0');
-        btnRight.classList.add('opacity-0');
-      });
+      // Show arrows on desktop hover only
+      if (window.matchMedia('(min-width: 768px)').matches) {
+        const container = slider.parentElement;
+        container.addEventListener('mouseenter', () => {
+          btnLeft.classList.remove('opacity-0');
+          btnRight.classList.remove('opacity-0');
+        });
+        container.addEventListener('mouseleave', () => {
+          btnLeft.classList.add('opacity-0');
+          btnRight.classList.add('opacity-0');
+        });
+      }
 
       // Scroll logic
       btnLeft.addEventListener('click', () => {
