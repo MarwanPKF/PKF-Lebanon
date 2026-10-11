@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Practice Areas & Professional Services | PKF Chartouni Lebanon</title>
+  <meta name="description"
+    content="Explore PKF Chartouni's comprehensive audit, tax, forensic accounting, corporate finance, and business risk services. Certified LACPA public accountants in Beirut." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/v2/css/style.css" />
+</head>
+
+<body class="bg-white text-slate-800 antialiased selection:bg-[#0B3C6D] selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-[#0B2545] text-slate-300 text-xs py-2 px-4 border-b border-slate-700/60">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 font-semibold text-white">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          PKF Global Network Member Firm
+        </span>
+        <span class="hidden md:inline text-slate-500">•</span>
+        <span class="hidden md:inline">Registered LACPA Firm in Lebanon</span>
+      </div>
+      <div class="flex items-center gap-4 text-slate-300">
+        <a href="tel:+9611493220" class="hover:text-white transition-colors">+961 01 493 220</a>
+        <span>•</span>
+        <a href="mailto:info@pkflb.com" class="hover:text-white transition-colors">info@pkflb.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 nav-glass">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="/v2/" class="flex items-center gap-3">
+          <img src="/assets/images/logo.svg" alt="PKF Chartouni" class="h-10 w-auto" />
+          <div class="hidden sm:block pl-3 border-l border-slate-200">
+            <span class="block text-xs font-bold tracking-wider text-[#0B3C6D] uppercase">Chartouni & Co.</span>
+            <span class="block text-[10px] text-slate-500 font-medium">Accountants & Business Advisers</span>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-700">
+          <a href="/v2/" class="hover:text-[#0B3C6D] transition-colors">Home</a>
+          <a href="/v2/about/" class="hover:text-[#0B3C6D] transition-colors">About Us</a>
+          <a href="/v2/services/" class="text-[#0B3C6D] font-bold">Practice Areas</a>
+          <a href="/v2/industries/" class="hover:text-[#0B3C6D] transition-colors">Industries</a>
+          <a href="/v2/insights/" class="hover:text-[#0B3C6D] transition-colors">Insights & Publications</a>
+          <a href="/v2/contact/" class="hover:text-[#0B3C6D] transition-colors">Contact</a>
+        </nav>
+
+        <div class="hidden sm:flex items-center gap-3">
+          <button class="open-rfp-btn rounded-xl bg-[#C8102E] hover:bg-[#A00C24] text-white px-5 py-2.5 text-sm font-semibold shadow-md btn-pulse">
+            Request a Proposal
+          </button>
+        </div>
+
+        <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100" aria-label="Toggle Menu">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobileMenuOverlay" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden"></div>
+  <div id="mobileMenuDrawer" class="fixed top-0 right-0 z-50 w-full max-w-xs h-full bg-white shadow-2xl p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-in-out">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-slate-100">
+        <img src="/assets/images/logo.svg" alt="PKF Chartouni" class="h-8 w-auto" />
+        <button id="closeMobileMenuBtn" class="p-2 text-slate-400 hover:text-slate-600 rounded-lg">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <nav class="mt-6 flex flex-col gap-4 text-base font-semibold text-slate-800">
+        <a href="/v2/" class="hover:text-[#0B3C6D] py-1">Home</a>
+        <a href="/v2/about/" class="hover:text-[#0B3C6D] py-1">About Us</a>
+        <a href="/v2/services/" class="text-[#0B3C6D] py-1">Practice Areas</a>
+        <a href="/v2/industries/" class="hover:text-[#0B3C6D] py-1">Industries</a>
+        <a href="/v2/insights/" class="hover:text-[#0B3C6D] py-1">Insights & Publications</a>
+        <a href="/v2/contact/" class="hover:text-[#0B3C6D] py-1">Contact Office</a>
+      </nav>
+    </div>
+    <div class="pt-6 border-t border-slate-100">
+      <button class="open-rfp-btn w-full py-3 bg-[#C8102E] text-white font-bold rounded-xl text-center">
+        Request a Proposal (RFP)
+      </button>
+    </div>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="pkf-hero-bg text-white py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <span class="inline-block px-3 py-1 rounded-full bg-white/10 text-xs font-semibold uppercase tracking-wider mb-4 border border-white/20">
+          Core Capabilities
+        </span>
+        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white">
+          Practice Areas Built for Demanding Environments
+        </h1>
+        <p class="mt-6 text-lg sm:text-xl text-slate-200 leading-relaxed">
+          From statutory audits and hyperinflation accounting to tax litigation defense and cross-border M&A, our specialized departments deliver rigorous outcomes backed by international methodologies.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service List -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
+
+      <!-- 1. Audit & Assurance (IAS 29) -->
+      <div id="assurance" class="grid lg:grid-cols-12 gap-10 items-center p-8 md:p-12 rounded-3xl bg-slate-50 border border-slate-200">
+        <div class="lg:col-span-7 space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="/assets/images/assurance-icon.svg" alt="Audit Icon" class="w-12 h-12" />
+            <div>
+              <span class="text-xs font-bold uppercase text-[#0B3C6D]">Audit & Assurance</span>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Independent Statutory Audit & IAS 29 Hyperinflation</h2>
+            </div>
+          </div>
+          <p class="text-sm text-slate-600 leading-relaxed pt-2">
+            Independent audit opinions recognized by Lebanese regulators, international banks, foreign boards, and global rating agencies. We conduct audits under International Standards on Auditing (ISA) and International Financial Reporting Standards (IFRS).
+          </p>
+          <div class="p-4 bg-white rounded-xl border border-slate-200 text-xs text-slate-700 space-y-1">
+            <strong>Key Specialization: IAS 29 (Hyperinflationary Economies)</strong>
+            <p class="text-slate-500">We advise boards on calculating cumulative general price index (CPI) restatements, revaluation of property, plant & equipment, and reconciling parallel versus official exchange rates.</p>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-2 text-xs font-medium text-slate-700 pt-2">
+            <div class="flex items-center gap-2"><span class="text-emerald-600">✓</span> Statutory annual audits</div>
+            <div class="flex items-center gap-2"><span class="text-emerald-600">✓</span> Interim review engagements</div>
+            <div class="flex items-center gap-2"><span class="text-emerald-600">✓</span> NGO donor fund audits (USAID, EU)</div>
+            <div class="flex items-center gap-2"><span class="text-emerald-600">✓</span> Agreed-Upon Procedures (AUP)</div>
+          </div>
+          <div class="pt-4 flex items-center gap-4">
+            <button class="open-rfp-btn px-6 py-2.5 bg-[#0B3C6D] hover:bg-[#0B2545] text-white font-semibold text-xs rounded-xl shadow-md transition-all">
+              Request Audit Proposal
+            </button>
+            <span class="text-xs text-slate-500 font-medium">Partner: Elie Chartouni</span>
+          </div>
+        </div>
+        <div class="lg:col-span-5 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+          <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wide">Why Independent Audits Matter in Lebanon</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            With increased scrutiny from international counterparties and correspondent banks, an independent audit signed by a PKF Global member firm establishes indisputable credibility for Lebanese enterprises seeking trade credit, banking facilities, or foreign capital.
+          </p>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+            <span>Frameworks: IFRS, ISA, LACPA</span>
+            <span class="font-bold text-emerald-700">100% Peer Reviewed</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Taxation & Structuring -->
+      <div id="taxation" class="grid lg:grid-cols-12 gap-10 items-center p-8 md:p-12 rounded-3xl bg-slate-50 border border-slate-200">
+        <div class="lg:col-span-7 space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="/assets/images/taxation-icon.svg" alt="Tax Icon" class="w-12 h-12" />
+            <div>
+              <span class="text-xs font-bold uppercase text-[#C8102E]">Taxation Practice</span>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Lebanese Tax Compliance, Offshore Structuring & Defense</h2>
+            </div>
+          </div>
+          <p class="text-sm text-slate-600 leading-relaxed pt-2">
+            Our tax department offers comprehensive guidance across corporate tax, Value Added Tax (VAT), built property tax, and payroll/NSSF filings. We represent clients through tax inspections and file formal objections before the Ministry of Finance.
+          </p>
+          <div class="grid sm:grid-cols-2 gap-2 text-xs font-medium text-slate-700 pt-2">
+            <div class="flex items-center gap-2"><span class="text-emerald-600">✓</span> Lebanese Offshore & Holding Companies</div>
+            <div class="flex items-center gap-2"><span class="text-emerald-600">✓</span> Corporate Income Tax & VAT Returns</div>
+            <div class="flex items-center gap-2"><span class="text-emerald-600">✓</span> Tax Audit Defense & Objections</div>
+            <div class="flex items-center gap-2"><span class="text-emerald-600">✓</span> Double Tax Treaty (DTT) Applications</div>
+          </div>
+          <div class="pt-4 flex items-center gap-4">
+            <button class="open-rfp-btn px-6 py-2.5 bg-[#C8102E] hover:bg-[#A00C24] text-white font-semibold text-xs rounded-xl shadow-md transition-all">
+              Consult Tax Department
+            </button>
+            <a href="/assets/downloads/pkf-wwtg-2025-2026_online.pdf" target="_blank" class="text-xs text-[#C8102E] font-bold hover:underline">
+              Download Tax Guide (PDF) &rarr;
+            </a>
+          </div>
+        </div>
+        <div class="lg:col-span-5 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+          <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wide">Lebanon Tax Reform Advisory</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Recent Lebanese budget laws have introduced significant revisions to corporate tax calculations, withholding tax requirements, and foreign asset disclosures. We ensure full compliance while legally safeguarding your enterprise against undue exposure.
+          </p>
+          <div class="pt-3 border-t border-slate-100 text-xs font-bold text-slate-700">
+            Director: Georges Bahnam • Manager: Elie Hrawi
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Forensic & Dispute Advisory -->
+      <div id="forensic" class="grid lg:grid-cols-12 gap-10 items-center p-8 md:p-12 rounded-3xl bg-slate-50 border border-slate-200">
+        <div class="lg:col-span-7 space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="/assets/images/forensic-accounting-icon.svg" alt="Forensic Icon" class="w-12 h-12" />
+            <div>
+              <span class="text-xs font-bold uppercase text-slate-800">Litigation & Forensic</span>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Forensic Accounting, Fraud Inquiries & Commercial Dispute Support</h2>
+            </div>
+          </div>
+          <p class="text-sm text-slate-600 leading-relaxed pt-2">
+            Discreet, objective, and court-admissible financial investigations for high-stakes commercial disputes, shareholder deadlocks, suspected executive embezzlement, and bank liability inquiries.
+          </p>
+          <div class="grid sm:grid-cols-2 gap-2 text-xs font-medium text-slate-700 pt-2">
+            <div class="flex items-center gap-2"><span class="text-emerald-600">✓</span> Corporate Fraud & Asset Tracing</div>
+            <div class="flex items-center gap-2"><span class="text-emerald-600">✓</span> Court-Appointed Financial Expert Testimony</div>
+            <div class="flex items-center gap-2"><span class="text-emerald-600">✓</span> Commercial Arbitration Damage Quantification</div>
+            <div class="flex items-center gap-2"><span class="text-emerald-600">✓</span> Shareholder Exit & Buyout Valuations</div>
+          </div>
+          <div class="pt-4 flex items-center gap-4">
+            <button class="open-rfp-btn px-6 py-2.5 bg-slate-900 hover:bg-black text-white font-semibold text-xs rounded-xl shadow-md transition-all">
+              Confidential Consultation
+            </button>
+            <span class="text-xs text-slate-500 font-medium">Partner: Georges Chartouni</span>
+          </div>
+        </div>
+        <div class="lg:col-span-5 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+          <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wide">Court & Arbitration Credentials</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Our findings have been submitted before Lebanese commercial tribunals, the Beirut Court of Appeal, and international arbitration centers (ICC Paris, DIFC-LCIA).
+          </p>
+          <div class="pt-3 border-t border-slate-100 text-xs font-bold text-slate-700">
+            Strict Confidentiality Guaranteed
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Corporate Finance & Valuations -->
+      <div id="corpfin" class="grid lg:grid-cols-12 gap-10 items-center p-8 md:p-12 rounded-3xl bg-slate-50 border border-slate-200">
+        <div class="lg:col-span-7 space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="/assets/images/corporate-finance-icon.svg" alt="Corporate Finance" class="w-12 h-12" />
+            <div>
+              <span class="text-xs font-bold uppercase text-[#0B3C6D]">Transactions & Strategy</span>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Corporate Finance, Valuations & Restructuring</h2>
+            </div>
+          </div>
+          <p class="text-sm text-slate-600 leading-relaxed pt-2">
+            Strategic M&A transaction support, independent business valuations, financial due diligence, and capital restructuring designed for companies navigating market transitions.
+          </p>
+          <div class="grid sm:grid-cols-2 gap-2 text-xs font-medium text-slate-700 pt-2">
+            <div class="flex items-center gap-2"><span class="text-emerald-600">✓</span> Buy-Side & Sell-Side Due Diligence</div>
+            <div class="flex items-center gap-2"><span class="text-emerald-600">✓</span> Enterprise Valuations (DCF & Multiples)</div>
+            <div class="flex items-center gap-2"><span class="text-emerald-600">✓</span> Feasibility Studies & Business Plans</div>
+            <div class="flex items-center gap-2"><span class="text-emerald-600">✓</span> Debt Restructuring with Commercial Banks</div>
+          </div>
+          <div class="pt-4 flex items-center gap-4">
+            <button class="open-rfp-btn px-6 py-2.5 bg-[#0B3C6D] hover:bg-[#0B2545] text-white font-semibold text-xs rounded-xl shadow-md transition-all">
+              Discuss Transaction Mandate
+            </button>
+            <span class="text-xs text-slate-500 font-medium">Director: Marc Cotis, FCCA</span>
+          </div>
+        </div>
+        <div class="lg:col-span-5 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+          <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wide">Pragmatic Valuation Under Uncertainty</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Standard global models often fail when applied blindly to Lebanon. We incorporate realistic foreign exchange discount rates, liquidity premiums, and operational risk adjustments to deliver defensible valuations.
+          </p>
+        </div>
+      </div>
+
+      <!-- 5. GCC & Cross-Border Expansion Desk -->
+      <div id="gcc" class="grid lg:grid-cols-12 gap-10 items-center p-8 md:p-12 rounded-3xl bg-slate-50 border border-slate-200">
+        <div class="lg:col-span-7 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-2xl bg-emerald-600 text-white flex items-center justify-center font-bold text-base">GCC</div>
+            <div>
+              <span class="text-xs font-bold uppercase text-emerald-700">Regional Gateway</span>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Lebanon-to-GCC Cross-Border Expansion Gateway</h2>
+            </div>
+          </div>
+          <p class="text-sm text-slate-600 leading-relaxed pt-2">
+            Empowering Lebanese business owners, tech founders, and family offices to expand operations into the UAE, Saudi Arabia, Cyprus, and Europe while maintaining tax-efficient structures in Lebanon.
+          </p>
+          <div class="grid sm:grid-cols-2 gap-2 text-xs font-medium text-slate-700 pt-2">
+            <div class="flex items-center gap-2"><span class="text-emerald-600">✓</span> UAE Freezone & Mainland Entity Setup</div>
+            <div class="flex items-center gap-2"><span class="text-emerald-600">✓</span> UAE Corporate Tax 9% Planning</div>
+            <div class="flex items-center gap-2"><span class="text-emerald-600">✓</span> Saudi Arabia (KSA) Zakat & Tax Liaison</div>
+            <div class="flex items-center gap-2"><span class="text-emerald-600">✓</span> Cyprus IP & Holding Company Coordination</div>
+          </div>
+          <div class="pt-4 flex items-center gap-4">
+            <button class="open-rfp-btn px-6 py-2.5 bg-emerald-700 hover:bg-emerald-800 text-white font-semibold text-xs rounded-xl shadow-md transition-all">
+              Inquire on GCC Expansion
+            </button>
+          </div>
+        </div>
+        <div class="lg:col-span-5 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+          <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wide">Direct PKF Regional Collaboration</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            We work in continuous coordination with our fellow PKF member offices in Dubai, Abu Dhabi, Riyadh, and Nicosia, giving you direct access to local regulators without navigating unfamiliar intermediaries.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="py-16 bg-slate-900 text-white text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold">Have a specific service requirement?</h2>
+      <p class="mt-3 text-slate-300 text-sm">
+        Our partners are available for an initial confidential discussion to review your needs.
+      </p>
+      <div class="mt-6 flex justify-center gap-4">
+        <button class="open-rfp-btn px-7 py-3 bg-[#C8102E] text-white font-bold rounded-xl text-sm shadow-lg btn-pulse">
+          Request a Proposal
+        </button>
+        <a href="/v2/contact/" class="px-7 py-3 bg-white/10 text-white font-semibold rounded-xl text-sm border border-white/20">
+          Visit Our Beirut Office
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-300 border-t border-slate-800 pt-16 pb-12 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div>
+          <img src="/assets/images/logo.svg" alt="PKF Chartouni" class="h-8 w-auto brightness-0 invert mb-4" />
+          <p class="text-xs text-slate-400 leading-relaxed">
+            PKF Chartouni is a member firm of PKF International Limited network of legally independent firms. Established in 1985.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-xs font-bold tracking-wider text-white uppercase mb-4">Practice Groups</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="#assurance" class="hover:text-white">Statutory Audit & IAS 29</a></li>
+            <li><a href="#taxation" class="hover:text-white">Taxation & Offshore</a></li>
+            <li><a href="#forensic" class="hover:text-white">Forensic Accounting</a></li>
+            <li><a href="#corpfin" class="hover:text-white">Corporate Finance & Valuations</a></li>
+            <li><a href="#gcc" class="hover:text-white">GCC Expansion Desk</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xs font-bold tracking-wider text-white uppercase mb-4">Beirut Office</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Sin El Fil, Fouad Chehab Blvd<br />
+            Atlas center, 3rd Floor<br />
+            Lebanon<br />
+            Tel: +961 01 493 220<br />
+            Email: info@pkflb.com
+          </p>
+        </div>
+        <div>
+          <h4 class="text-xs font-bold tracking-wider text-white uppercase mb-4">Request Proposal</h4>
+          <p class="text-xs text-slate-400 mb-3">Speak directly with an engagement partner.</p>
+          <button class="open-rfp-btn w-full py-2.5 px-4 bg-[#C8102E] text-white text-xs font-bold rounded-xl text-center">
+            Submit RFP &rarr;
+          </button>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-slate-800 text-[11px] text-slate-500 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div>&copy; <span class="dynamic-year">2026</span> PKF Chartouni. LACPA Certified Public Accountants.</div>
+        <div><a href="/about/legal.html" class="hover:underline">Legal Disclaimer</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- RFP Modal -->
+  <div id="rfpModal" class="fixed inset-0 z-50 modal-backdrop hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl shadow-2xl max-w-lg w-full overflow-hidden border border-slate-200">
+      <div class="bg-[#0B3C6D] px-6 py-5 text-white flex items-center justify-between">
+        <div>
+          <h3 class="font-bold text-lg">Request a Proposal (RFP)</h3>
+          <p class="text-xs text-blue-200 mt-0.5">Direct dispatch to Senior Partners</p>
+        </div>
+        <button id="closeRfpBtn" class="text-blue-200 hover:text-white p-1">✕</button>
+      </div>
+      <form id="rfpForm" class="p-6 space-y-4">
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Service Required *</label>
+          <select required class="w-full text-sm rounded-xl border border-slate-300 p-2.5">
+            <option value="audit">Statutory Audit / Assurance / IAS 29</option>
+            <option value="tax">Tax Compliance & Corporate Structuring</option>
+            <option value="forensic">Forensic Accounting & Dispute Advisory</option>
+            <option value="corpfin">Corporate Finance & Valuations</option>
+            <option value="gcc">GCC / UAE Expansion Desk</option>
+          </select>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <input type="text" required placeholder="Full Name *" class="w-full text-sm rounded-xl border border-slate-300 p-2.5" />
+          <input type="text" required placeholder="Company *" class="w-full text-sm rounded-xl border border-slate-300 p-2.5" />
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <input type="email" required placeholder="Corporate Email *" class="w-full text-sm rounded-xl border border-slate-300 p-2.5" />
+          <input type="tel" required placeholder="Phone / WhatsApp *" class="w-full text-sm rounded-xl border border-slate-300 p-2.5" />
+        </div>
+        <button type="submit" class="w-full py-3 bg-[#C8102E] text-white font-bold rounded-xl text-sm shadow-md">
+          Transmit Proposal Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="/v2/js/main.js"></script>
+</body>
+</html>

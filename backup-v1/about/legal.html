@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Legal disclaimer for PKF Chartouni. Member of PKF Global network of independent legal entities." />
+    <title>Legal Disclaimer | PKF Chartouni</title>
+    <link rel="stylesheet" href="/css/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Arial', 'sans-serif'],
+                    },
+                    colors: {
+                        pkf: {
+                            blue: '#0B3C6D',
+                            'blue-dark': '#082744',
+                            'blue-light': '#1a5591',
+                            red: '#C8102E',
+                            gray: '#F4F6F8',
+                            text: '#1A1A1A',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-gray-900 antialiased font-sans flex flex-col min-h-screen">
+
+    <header class="sticky top-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur">
+        <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+            <a href="/" class="flex items-center gap-3">
+                <img src="/assets/images/logo.svg" alt="PKF Chartouni" class="h-10 w-auto" />
+            </a>
+            <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
+                <a class="text-pkf-text hover:text-pkf-blue transition-colors" href="/">Home</a>
+                <a class="text-pkf-blue font-bold transition-colors" href="/about/">About</a>
+                <a class="text-pkf-text hover:text-pkf-blue transition-colors" href="/services/">Services</a>
+                <a class="text-pkf-text hover:text-pkf-blue transition-colors" href="/publications/">Publications</a>
+                <a class="text-pkf-text hover:text-pkf-blue transition-colors" href="/join-our-team/">Join Our Team</a>
+                <a class="rounded-xl bg-pkf-blue px-5 py-2.5 text-white hover:bg-pkf-blue/90 transition-colors focus:outline-none focus:ring-2 focus:ring-pkf-blue focus:ring-offset-2 animate-pulse-ring"
+                    href="/contact/">Get in touch</a>
+            </nav>
+            <button class="md:hidden rounded-xl border border-gray-200 px-3 py-2 text-sm font-medium"
+                id="menuBtn">Menu</button>
+        </div>
+        <div class="hidden border-t border-gray-200 bg-white" id="mobileMenu">
+            <div class="mx-auto max-w-6xl px-4 py-4 flex flex-col gap-2 text-sm font-medium">
+                <a class="block py-2 px-2" href="/">Home</a>
+                <a class="block py-2 px-2" href="/about/">About</a>
+                <a class="block py-2 px-2" href="/services/">Services</a>
+                <a class="block py-2 px-2" href="/publications/">Publications</a>
+                <a class="block py-2 px-2" href="/join-our-team/">Join Our Team</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section style="background-color: #0f3780; background-image: url('/assets/images/starburst.webp'); background-position: calc(50% - 320px) 50%; background-repeat: no-repeat;">
+            <div class=" relative mx-auto max-w-6xl px-4 py-20 md:py-28">
+            <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl">Legal Disclaimer</h1>
+            </div>
+        </section>
+
+        <!-- Content -->
+        <section class="py-16 md:py-24">
+            <div class="mx-auto max-w-3xl px-4">
+                <div class="prose prose-lg text-gray-600">
+                    <p>
+                        PKF Chartouni is a member of PKF Global, the network of member firms of PKF International
+                        Limited,
+                        each of which is a separate and independent legal entity and does not accept any responsibility
+                        or
+                        liability for the actions or inactions of any individual member or correspondent firm(s).
+                    </p>
+
+                    <p class="mt-8">
+                        <strong>Registered Office:</strong>
+                    </p>
+
+                    <p>
+                        Sin El Fil, Fouad Chehab Blvd<br />
+                        Atlas center, 3rd Floor<br />
+                        Lebanon
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-gray-200 bg-pkf-gray py-12 mt-auto">
+        <div class="mx-auto max-w-6xl px-4 text-center">
+            <p class="text-sm text-gray-500">© <span id="year">2026</span> PKF Chartouni. <a href="/about/legal.html"
+                    class="underline hover:text-gray-900">Legal Disclaimer</a>.</p>
+        </div>
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+            document.getElementById('menuBtn').addEventListener('click', () => {
+                document.getElementById('mobileMenu').classList.toggle('hidden');
+            });
+        </script>
+    </footer>
+</body>
+
+</html>

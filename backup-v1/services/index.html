@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Professional auditing, tax consulting, and advisory services from PKF Chartouni in Lebanon." />
+    <title>Our Services | PKF Chartouni</title>
+    <link rel="stylesheet" href="/css/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Arial', 'sans-serif'],
+                    },
+                    colors: {
+                        pkf: {
+                            blue: '#0B3C6D',
+                            'blue-dark': '#082744',
+                            'blue-light': '#1a5591',
+                            red: '#C8102E',
+                            gray: '#F4F6F8',
+                            text: '#1A1A1A',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-gray-900 antialiased font-sans flex flex-col min-h-screen">
+
+    <header class="sticky top-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur">
+        <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+            <a href="/" class="flex items-center gap-3">
+                <img src="/assets/images/logo.svg" alt="PKF Chartouni" class="h-10 w-auto" />
+            </a>
+            <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
+                <a class="text-pkf-text hover:text-pkf-blue transition-colors" href="/">Home</a>
+                <a class="text-pkf-text hover:text-pkf-blue transition-colors" href="/about/">About</a>
+                <a class="text-pkf-text hover:text-pkf-blue transition-colors" href="/services/">Services</a>
+                <a class="text-pkf-text hover:text-pkf-blue transition-colors" href="/publications/">Publications</a>
+                <a class="text-pkf-text hover:text-pkf-blue transition-colors" href="/join-our-team/">Join Our Team</a>
+                <a class="rounded-xl bg-pkf-blue px-5 py-2.5 text-white hover:bg-pkf-blue/90 transition-colors focus:outline-none focus:ring-2 focus:ring-pkf-blue focus:ring-offset-2 animate-pulse-ring" href="/contact/">Get in touch</a>
+            </nav>
+            <button class="md:hidden rounded-xl border border-gray-200 px-3 py-2 text-sm font-medium"
+                id="menuBtn">Menu</button>
+        </div>
+        <div class="hidden border-t border-gray-200 bg-white" id="mobileMenu">
+            <div class="mx-auto max-w-6xl px-4 py-4 flex flex-col gap-2 text-sm font-medium">
+                <a class="block py-2 px-2" href="/">Home</a>
+                <a class="block py-2 px-2" href="/about/">About</a>
+                <a class="block py-2 px-2" href="/services/">Services</a>
+                <a class="block py-2 px-2" href="/publications/">Publications</a>
+                <a class="block py-2 px-2" href="/join-our-team/">Join Our Team</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero -->
+        <section style="background-color: #0f3780; background-image: url('/assets/images/starburst.webp'); background-position: calc(50% - 320px) 50%; background-repeat: no-repeat;">
+            <!-- Subtle overlay -->
+
+            <div class="relative mx-auto max-w-6xl px-4 py-20 md:py-28">
+                <div class="max-w-3xl">
+                    <p class="text-sm font-semibold tracking-wide text-white/80 uppercase mb-4">What We Do</p>
+                    <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl">Our Services</h1>
+                    <p class="mt-6 text-xl leading-relaxed text-white/90">
+                        "It takes different colours to complete a masterpiece." We bring together diverse expertise to
+                        provide integrated solutions for your business.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section class="py-16 md:py-24">
+            <div class="mx-auto max-w-6xl px-4">
+                <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+                    <a href="/services/assurance.html"
+                        class="group block rounded-2xl border border-gray-200 p-8 hover:border-pkf-red hover:shadow-lg transition">
+                        <img src="/assets/images/assurance-icon.svg" alt="Assurance" class="h-16 w-16 mb-4">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-pkf-blue">Assurance</h3>
+                        <p class="mt-4 text-gray-600">Audit and assurance services focused on clarity and confidence.
+                        </p>
+                    </a>
+
+                    <a href="/services/taxation.html"
+                        class="group block rounded-2xl border border-gray-200 p-8 hover:border-pkf-red hover:shadow-lg transition">
+                        <img src="/assets/images/taxation-icon.svg" alt="Taxation" class="h-16 w-16 mb-4">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-pkf-blue">Taxation Consulting</h3>
+                        <p class="mt-4 text-gray-600">Tax compliance, advisory, and planning tailored to your context.
+                        </p>
+                    </a>
+
+                    <a href="/services/corporate-finance-advisory.html"
+                        class="group block rounded-2xl border border-gray-200 p-8 hover:border-pkf-red hover:shadow-lg transition">
+                        <img src="/assets/images/corporate-finance-icon.svg" alt="Corporate Finance"
+                            class="h-16 w-16 mb-4">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-pkf-blue">Corporate Finance</h3>
+                        <p class="mt-4 text-gray-600">Transaction support, valuation, and strategic financial advice.
+                        </p>
+                    </a>
+
+                    <a href="/services/business-risk-solutions.html"
+                        class="group block rounded-2xl border border-gray-200 p-8 hover:border-pkf-red hover:shadow-lg transition">
+                        <img src="/assets/images/business-risk-icon.svg" alt="Business Risk Solutions"
+                            class="h-16 w-16 mb-4">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-pkf-blue">Business Risk Solutions
+                        </h3>
+                        <p class="mt-4 text-gray-600">Internal audit, risk management, and corporate governance.</p>
+                    </a>
+
+                    <a href="/services/forensic-accounting.html"
+                        class="group block rounded-2xl border border-gray-200 p-8 hover:border-pkf-red hover:shadow-lg transition">
+                        <img src="/assets/images/forensic-accounting-icon.svg" alt="Forensic Accounting"
+                            class="h-16 w-16 mb-4">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-pkf-blue">Forensic Accounting</h3>
+                        <p class="mt-4 text-gray-600">Investigations, dispute support, and fraud-related services.</p>
+                    </a>
+
+                    <a href="/services/insolvency.html"
+                        class="group block rounded-2xl border border-gray-200 p-8 hover:border-pkf-red hover:shadow-lg transition">
+                        <img src="/assets/images/insolvency-icon.svg" alt="Insolvency Services" class="h-16 w-16 mb-4">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-pkf-blue">Insolvency Services</h3>
+                        <p class="mt-4 text-gray-600">Restructuring and insolvency assistance for complex business
+                            situations.</p>
+                    </a>
+
+                    <a href="/services/technology-advisory.html"
+                        class="group block rounded-2xl border border-gray-200 p-8 hover:border-pkf-red hover:shadow-lg transition">
+                        <img src="/assets/images/technology-advisory-icon.svg" alt="Technology Advisory"
+                            class="h-16 w-16 mb-4">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-pkf-blue">Technology Advisory</h3>
+                        <p class="mt-4 text-gray-600">IT systems support, governance, and technology optimization.</p>
+                    </a>
+
+                    <a href="/services/management-consultancy.html"
+                        class="group block rounded-2xl border border-gray-200 p-8 hover:border-pkf-red hover:shadow-lg transition">
+                        <img src="/assets/images/management-consultancy-icon.svg" alt="Management Consultancy"
+                            class="h-16 w-16 mb-4">
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-pkf-blue">Management Consultancy
+                        </h3>
+                        <p class="mt-4 text-gray-600">Operational and strategic consulting for sustainable growth.</p>
+                    </a>
+
+                    <!-- Placeholder Services -->
+
+
+                    <div class="rounded-2xl border border-gray-200 bg-gray-50 p-8 opacity-75">
+                        <h3 class="text-xl font-bold text-gray-500">Financial Planning</h3>
+                        <p class="mt-4 text-sm text-gray-500">Available on request. Contact us to discuss your needs.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose PKF Mini Panel -->
+        <section style="background-color: #0f3780; background-image: url('/assets/images/starburst.webp'); background-position: calc(50% - 320px) 50%; background-repeat: no-repeat;">
+            <div class="mx-auto max-w-6xl px-4 text-center">
+                <h2 class="text-2xl font-bold">Why PKF Chartouni?</h2>
+                <p class="mt-4 text-gray-300 max-w-2xl mx-auto">
+                    We combine the technical expertise of a large firm with the agility and personal attention of a
+                    boutique practice.
+                </p>
+                <a href="/contact/"
+                    class="mt-8 inline-block rounded-xl bg-white px-6 py-3 text-pkf-blue font-bold hover:bg-gray-50">
+                    Start a specific discussion
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-gray-200 bg-pkf-gray py-12 mt-auto">
+        <div class="mx-auto max-w-6xl px-4 text-center">
+            <p class="text-sm text-gray-500">© <span id="year">2026</span> PKF Chartouni. <a href="/about/legal.html"
+                    class="underline hover:text-gray-900">Legal Disclaimer</a>.</p>
+        </div>
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+            document.getElementById('menuBtn').addEventListener('click', () => {
+                document.getElementById('mobileMenu').classList.toggle('hidden');
+            });
+        </script>
+    </footer>
+</body>
+
+</html>

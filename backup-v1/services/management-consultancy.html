@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Management consultancy services from PKF Chartouni. Strategic planning and operational improvement." />
+    <title>Management Consultancy | PKF Chartouni</title>
+    <link rel="stylesheet" href="/css/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Arial', 'sans-serif'],
+                    },
+                    colors: {
+                        pkf: {
+                            blue: '#0B3C6D',
+                            'blue-dark': '#082744',
+                            'blue-light': '#1a5591',
+                            red: '#C8102E',
+                            gray: '#F4F6F8',
+                            text: '#1A1A1A',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-gray-900 antialiased font-sans flex flex-col min-h-screen">
+
+    <header class="sticky top-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur">
+        <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+            <a href="/" class="flex items-center gap-3">
+                <img src="/assets/images/logo.svg" alt="PKF Chartouni" class="h-10 w-auto" />
+            </a>
+            <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
+                <a class="text-pkf-text hover:text-pkf-blue transition-colors" href="/">Home</a>
+                <a class="text-pkf-text hover:text-pkf-blue transition-colors" href="/about/">About</a>
+                <a class="text-pkf-blue font-bold transition-colors" href="/services/">Services</a>
+                <a class="text-pkf-text hover:text-pkf-blue transition-colors" href="/publications/">Publications</a>
+                <a class="text-pkf-text hover:text-pkf-blue transition-colors" href="/join-our-team/">Join Our Team</a>
+                <a class="rounded-xl bg-pkf-blue px-5 py-2.5 text-white hover:bg-pkf-blue/90 transition-colors focus:outline-none focus:ring-2 focus:ring-pkf-blue focus:ring-offset-2 animate-pulse-ring" href="/contact/">Get in touch</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section style="background-color: #0f3780; background-image: url('/assets/images/starburst.webp'); background-position: calc(50% - 320px) 50%; background-repeat: no-repeat;">
+            <div class="relative mx-auto max-w-6xl px-4 py-20 md:py-28">
+                <div class="text-sm font-medium text-white/70 mb-4"><a href="/services/"
+                        class="hover:text-white transition-colors">← Back
+                        to Services</a></div>
+                <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl">Management Consultancy</h1>
+                <p class="mt-6 text-xl leading-relaxed text-white/90 max-w-3xl">
+                    Supporting organizations in achieving performance improvement and sustainable growth through
+                    strategic and operational advisory services.
+                </p>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24">
+            <div class="mx-auto max-w-3xl px-4">
+                <div class="prose prose-lg text-gray-600">
+                    <p>
+                        In a rapidly changing business environment, organizations require clear strategy, efficient
+                        operations, and effective execution. Our management consultancy services provide an independent,
+                        results-oriented perspective to help clients address complex challenges, improve performance,
+                        and achieve long-term objectives.
+                    </p>
+                    <p class="mt-4">
+                        We work closely with leadership teams to translate strategy into practical actions, supporting
+                        transformation initiatives across the organization.
+                    </p>
+                    <h3 class="mt-8 mb-4 font-bold text-gray-900">Our Focus Areas</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Strategic planning and execution</li>
+                        <li>Operational efficiency and process re-engineering</li>
+                        <li>Human resources and organizational advisory</li>
+                        <li>Change management and transformation support</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white border-t border-gray-100">
+            <div class="mx-auto max-w-4xl px-4 text-center">
+                <h2 class="text-2xl font-bold text-gray-900">Unlock your potential</h2>
+                <a href="/contact/"
+                    class="inline-flex items-center justify-center rounded-xl px-8 py-3 text-white font-medium hover:opacity-90 transition-all focus:outline-none focus:ring-2 focus:ring-pkf-blue focus:ring-offset-2 animate-pulse-ring" style="background-color: #0f3780; background-image: url('/assets/images/starburst.webp'); background-position: calc(50% - 320px) 50%; background-repeat: no-repeat;">
+                    Contact Us
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-gray-200 bg-pkf-gray py-12 mt-auto">
+        <div class="mx-auto max-w-6xl px-4 text-center">
+            <p class="text-sm text-gray-500">© <span id="year">2026</span> PKF Chartouni. <a href="/about/legal.html"
+                    class="underline hover:text-gray-900">Legal Disclaimer</a>.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
