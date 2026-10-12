@@ -1,8 +1,12 @@
 # Test all navigation links on the website
-Write-Host "Testing PKF Website Navigation Links..." -ForegroundColor Cyan
+param(
+    [int]$Port = 8080
+)
+
+Write-Host "Testing PKF Website Navigation Links on port $Port..." -ForegroundColor Cyan
 Write-Host ""
 
-$baseUrl = "http://localhost:8000"
+$baseUrl = "http://localhost:$Port"
 $testResults = @()
 
 # Define all links to test
@@ -10,10 +14,13 @@ $links = @(
     @{Name = "Home"; Url = "/" },
     @{Name = "About"; Url = "/about/" },
     @{Name = "Services"; Url = "/services/" },
+    @{Name = "Industries"; Url = "/industries/" },
+    @{Name = "Insights"; Url = "/insights/" },
     @{Name = "Publications"; Url = "/publications/" },
     @{Name = "Join Our Team"; Url = "/join-our-team/" },
     @{Name = "Contact"; Url = "/contact/" },
-    @{Name = "About - Team"; Url = "/about/team.html" },
+    @{Name = "About - Team Anchor"; Url = "/about/#team" },
+    @{Name = "About - Team (Legacy)"; Url = "/about/team.html" },
     @{Name = "About - Philosophies"; Url = "/about/philosophies.html" },
     @{Name = "About - Legal"; Url = "/about/legal.html" },
     @{Name = "Services - Assurance"; Url = "/services/assurance.html" },
@@ -24,7 +31,17 @@ $links = @(
     @{Name = "Services - Insolvency"; Url = "/services/insolvency.html" },
     @{Name = "Services - Management Consultancy"; Url = "/services/management-consultancy.html" },
     @{Name = "Services - Technology Advisory"; Url = "/services/technology-advisory.html" },
-    @{Name = "Contact - Thank You"; Url = "/contact/thank-you.html" }
+    @{Name = "Contact - Thank You"; Url = "/contact/thank-you.html" },
+    @{Name = "V2 - Home"; Url = "/v2/" },
+    @{Name = "V2 - About"; Url = "/v2/about/" },
+    @{Name = "V2 - Services"; Url = "/v2/services/" },
+    @{Name = "V2 - Industries"; Url = "/v2/industries/" },
+    @{Name = "V2 - Insights"; Url = "/v2/insights/" },
+    @{Name = "V2 - Contact"; Url = "/v2/contact/" },
+    @{Name = "Asset - Logo"; Url = "/assets/images/logo.svg" },
+    @{Name = "Asset - PDF Tax Guide"; Url = "/assets/downloads/pkf-wwtg-2025-2026_online.pdf" },
+    @{Name = "Sitemap XML"; Url = "/sitemap.xml" },
+    @{Name = "Robots TXT"; Url = "/robots.txt" }
 )
 
 foreach ($link in $links) {
